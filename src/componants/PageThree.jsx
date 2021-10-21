@@ -1,8 +1,9 @@
 import React from 'react';
-import { Document, Page, Text, StyleSheet, Font } from '@react-pdf/renderer';
-const PageTow = () => {
+import ReactPDF from '@react-pdf/renderer';
+import { Document, Page, Text, StyleSheet, Font,PDFViewer } from '@react-pdf/renderer';
+const PageThree = () => {
 	return (
-		<Document>
+		<Document file="../pdffile/pageThree.pdf">
 			<Page style={styles.page} size='A4' debug>
 				<Text style={{ marginTop: 450 }}>
 					Widows example. Try changing prop value
@@ -71,4 +72,5 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default PageTow;
+
+export default PageThree;

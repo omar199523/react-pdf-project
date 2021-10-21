@@ -1,8 +1,9 @@
 import React from 'react';
-import { Document, Page, Text, StyleSheet } from '@react-pdf/renderer';
+import { Document, Page, Text, StyleSheet,PDFViewer } from '@react-pdf/renderer';
 const PageOne = () => {
 	return (
-		<Document>
+		
+		<Document file="..\pdfFile\pageOne.pdf">
 			<Page style={styles.body} wrap>
 				<Text style={styles.title}>Don Quijote de la Mancha</Text>
 				<Text style={styles.author}>Miguel de Cervantes</Text>

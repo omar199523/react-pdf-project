@@ -2,13 +2,14 @@ import './App.css';
 import PageOne from './componants/PageOne';
 import PageTow from './componants/PageTow';
 import PageThree from './componants/PageThree';
+import { PDFViewer } from '@react-pdf/renderer';
 function App() {
 	return (
-		<div className='App'>
-			{/* <PageOne />
-			<PageTow /> */}
-			<PageThree />
-		</div>
+		<PDFViewer className='App'>
+			<PageOne />
+			<PageTow />
+			<PageOne />
+		</PDFViewer>
 	);
 }
 

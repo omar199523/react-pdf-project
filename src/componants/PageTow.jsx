@@ -2,7 +2,7 @@ import React from 'react';
 import { Document, Page, Text, StyleSheet } from '@react-pdf/renderer';
 const PageTow = () => {
 	return (
-		<Document>
+		<Document file="..\pdfFile\pageTow.pdf">
 			<Page style={styles.body} wrap>
 				<Text style={styles.title}>Don Quijote de la Mancha</Text>
 				<Text style={styles.author}>Miguel de Cervantes</Text>
